@@ -1,0 +1,39 @@
+{
+  "name": "revflow-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "dev": "node --watch src/server.mjs",
+    "db:migrate": "node scripts/migrate.mjs",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "demo": "node scripts/demo.mjs",
+    "eval": "node evaluation/run.mjs",
+    "eval:live": "node evaluation/live.mjs",
+    "eval:replay": "node evaluation/replay-model.mjs",
+    "check": "node scripts/check.mjs",
+    "fixtures": "node evaluation/generate.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.3.14",
+    "ajv": "^8.17.1",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "agent-browser": "^0.38.1"
+  },
+  "description": "AI lead-to-revenue orchestration with n8n, PostgreSQL, deterministic policy controls, and human approvals.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarekamr737/revflow-ai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tarekamr737/revflow-ai/issues"
+  },
+  "homepage": "https://github.com/tarekamr737/revflow-ai#readme"
+}

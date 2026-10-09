@@ -1,0 +1,1178 @@
+{
+  "instance": "https://tarek1new.app.n8n.cloud",
+  "workflows": [
+    {
+      "name": "revflow_01_lead_ingestion",
+      "stage": "ingest",
+      "id": "fYKMJx8pwrtjfGpB",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/fYKMJx8pwrtjfGpB",
+      "validation": {
+        "valid": true,
+        "nodeCount": 10,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "38",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "auEyB9docrzI15FM",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "97",
+            "116",
+            "118"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 2,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "name": "revflow_02_normalize_dedupe",
+      "stage": "normalize",
+      "id": "c17veh72ZKCFIyAu",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/c17veh72ZKCFIyAu",
+      "validation": {
+        "valid": true,
+        "nodeCount": 9,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "26",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "executionTracing": {
+        "successful_synthetic_only": true,
+        "verified": true,
+        "settings_restored": true
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "43ufdVqP0vh1uv9L",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "97",
+            "96"
+          ]
+        },
+        "presentationExecution": {
+          "execution_id": "2185",
+          "status": "success",
+          "correlation_id": "ad498738-39a4-449f-9ff0-ddd9877cf58a",
+          "record": "docs/connected-workflow-executions.json"
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 1,
+        "provider_authorization_pending": true
+      },
+      "presentationExecution": {
+        "execution_id": "52",
+        "status": "success",
+        "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+        "record": "docs/account-migration-workflow-executions.json"
+      }
+    },
+    {
+      "name": "revflow_03_enrichment",
+      "stage": "enrich",
+      "id": "lfV3tn5n5zpL4N8L",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/lfV3tn5n5zpL4N8L",
+      "validation": {
+        "valid": true,
+        "nodeCount": 9,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "25",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "executionTracing": {
+        "successful_synthetic_only": true,
+        "verified": true,
+        "settings_restored": true
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "pJ5ViOd6DTCXMEnC",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "226",
+            "162"
+          ]
+        },
+        "presentationExecution": {
+          "execution_id": "2187",
+          "status": "success",
+          "correlation_id": "ad498738-39a4-449f-9ff0-ddd9877cf58a",
+          "record": "docs/connected-workflow-executions.json"
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 1,
+        "provider_authorization_pending": true
+      },
+      "presentationExecution": {
+        "execution_id": "54",
+        "status": "success",
+        "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+        "record": "docs/account-migration-workflow-executions.json"
+      }
+    },
+    {
+      "name": "revflow_05_score_route",
+      "stage": "score",
+      "id": "Yhw9UvAXmwWt3esg",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/Yhw9UvAXmwWt3esg",
+      "validation": {
+        "valid": true,
+        "nodeCount": 9,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "23",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "executionTracing": {
+        "successful_synthetic_only": true,
+        "verified": true,
+        "settings_restored": true
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "kGeTjLFh5cU1qZWB",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "97",
+            "242",
+            "250"
+          ]
+        },
+        "presentationExecution": {
+          "execution_id": "2194",
+          "status": "success",
+          "correlation_id": "ad498738-39a4-449f-9ff0-ddd9877cf58a",
+          "record": "docs/connected-workflow-executions.json"
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 1,
+        "provider_authorization_pending": true
+      },
+      "presentationExecution": {
+        "execution_id": "61",
+        "status": "success",
+        "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+        "record": "docs/account-migration-workflow-executions.json"
+      }
+    },
+    {
+      "name": "revflow_audit_event",
+      "stage": "audit",
+      "id": "3ZFf5I3SDAqnH5Ct",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/3ZFf5I3SDAqnH5Ct",
+      "validation": {
+        "valid": true,
+        "nodeCount": 8,
+        "reviewed_warnings": []
+      },
+      "active": false,
+      "live_status": "Inactive utility/helper; fixtures and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "37",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "4kqAmu33qcOahwwE",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "156"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "pending",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Inactive utility/helper fixtures verified; no automatic trigger enabled."
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 1,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "name": "revflow_04_ai_signal_extraction",
+      "stage": "qualify",
+      "id": "m1dqLpTtqhwtLOZe",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/m1dqLpTtqhwtLOZe",
+      "validation": {
+        "valid": true,
+        "nodeCount": 9,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "24",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "executionTracing": {
+        "successful_synthetic_only": true,
+        "verified": true,
+        "settings_restored": true
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "LasZTrooIw2fQlFc",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "97",
+            "258",
+            "250"
+          ]
+        },
+        "presentationExecution": {
+          "execution_id": "2190",
+          "status": "success",
+          "correlation_id": "ad498738-39a4-449f-9ff0-ddd9877cf58a",
+          "record": "docs/connected-workflow-executions.json"
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 1,
+        "provider_authorization_pending": true
+      },
+      "presentationExecution": {
+        "execution_id": "57",
+        "status": "success",
+        "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+        "record": "docs/account-migration-workflow-executions.json"
+      }
+    },
+    {
+      "name": "revflow_06_hubspot_sync",
+      "stage": "crm",
+      "id": "y8tSFttgTxgwU1ef",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/y8tSFttgTxgwU1ef",
+      "validation": {
+        "valid": true,
+        "nodeCount": 9,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "22",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "executionTracing": {
+        "successful_synthetic_only": true,
+        "verified": true,
+        "settings_restored": true
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "y2tytDebvvy6TXLc",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "97",
+            "116"
+          ]
+        },
+        "presentationExecution": {
+          "execution_id": "2196",
+          "status": "success",
+          "correlation_id": "ad498738-39a4-449f-9ff0-ddd9877cf58a",
+          "record": "docs/connected-workflow-executions.json"
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 1,
+        "provider_authorization_pending": true
+      },
+      "presentationExecution": {
+        "execution_id": "63",
+        "status": "success",
+        "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+        "record": "docs/account-migration-workflow-executions.json"
+      }
+    },
+    {
+      "name": "revflow_07_outreach_generate",
+      "stage": "draft",
+      "id": "MCfInasuYuiB2xYr",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/MCfInasuYuiB2xYr",
+      "validation": {
+        "valid": true,
+        "nodeCount": 9,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "21",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "executionTracing": {
+        "successful_synthetic_only": true,
+        "verified": true,
+        "settings_restored": true
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "a7u9rcmA0iCcJVlN",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "97",
+            "258"
+          ]
+        },
+        "presentationExecution": {
+          "execution_id": "2203",
+          "status": "success",
+          "correlation_id": "ad498738-39a4-449f-9ff0-ddd9877cf58a",
+          "record": "docs/connected-workflow-executions.json"
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 1,
+        "provider_authorization_pending": true
+      },
+      "presentationExecution": {
+        "execution_id": "70",
+        "status": "success",
+        "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+        "record": "docs/account-migration-workflow-executions.json"
+      }
+    },
+    {
+      "name": "revflow_08_outreach_policy_hitl_send",
+      "stage": "send",
+      "id": "XuEWSfd2UV1KH9zJ",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/XuEWSfd2UV1KH9zJ",
+      "validation": {
+        "valid": true,
+        "nodeCount": 9,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "28",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "IXlipOzuTfdr4pp7",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "121",
+            "123",
+            "90"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 2,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "name": "revflow_09_reply_agent",
+      "stage": "reply",
+      "id": "yi9xLmEv1TJVM5H6",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/yi9xLmEv1TJVM5H6",
+      "validation": {
+        "valid": true,
+        "nodeCount": 9,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "27",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "IxoM14kdsEOXsFbs",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "124",
+            "128",
+            "133"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 2,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "name": "revflow_10_meeting_lifecycle",
+      "stage": "meeting",
+      "id": "ATOVE0vQQcENQJvB",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/ATOVE0vQQcENQJvB",
+      "validation": {
+        "valid": true,
+        "nodeCount": 9,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "36",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "jm3fqEFwNKHh6nEV",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "140",
+            "145",
+            "136"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 2,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "name": "revflow_followup_scheduler",
+      "stage": "followups",
+      "id": "QsVSqvRqN5GW8iAw",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/QsVSqvRqN5GW8iAw",
+      "validation": {
+        "valid": true,
+        "nodeCount": 10,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "30",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "approval_resume": "Authenticated webhook added through MCP; credential pending; updated SDK validation passes.",
+      "reviewed_warning": "Canvas has eight collapsed items; remaining leaf nodes cannot join valid single-entry/exit groups across the error branch.",
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "LIOL6WsRp5SrRPN8",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "188",
+            "192",
+            "196",
+            "198",
+            "269"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 2,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "name": "revflow_11_error_dlq",
+      "stage": "fail",
+      "id": "3EJQ4oq50SwNkOjD",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/3EJQ4oq50SwNkOjD",
+      "validation": {
+        "valid": true,
+        "nodeCount": 8,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "35",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "gXfZyiwFgj2x9Rio",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "228",
+            "231"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 1,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "name": "revflow_12_evaluation",
+      "stage": "evaluate",
+      "id": "FXlDGvCtDgluX4Le",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/FXlDGvCtDgluX4Le",
+      "validation": {
+        "valid": true,
+        "nodeCount": 8,
+        "reviewed_warnings": []
+      },
+      "active": false,
+      "live_status": "Inactive utility/helper; fixtures and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "34",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "fAUIxBs5RaxkQxqq",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "233",
+            "268"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "pending",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Inactive utility/helper fixtures verified; no automatic trigger enabled."
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 1,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "name": "revflow_retry_scheduler",
+      "stage": "retries",
+      "id": "WkaEhVYJw0mecbXg",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/WkaEhVYJw0mecbXg",
+      "validation": {
+        "valid": true,
+        "nodeCount": 9,
+        "reviewed_warnings": []
+      },
+      "active": false,
+      "live_status": "Inactive utility/helper; fixtures and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "32",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "1VyjDHXyLFbCjnYq",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "266",
+            "271"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "pending",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Inactive utility/helper fixtures verified; no automatic trigger enabled."
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 1,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "name": "revflow_meeting_reminders",
+      "stage": "reminders",
+      "id": "LcJtvzGlvAOZcPYB",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/LcJtvzGlvAOZcPYB",
+      "validation": {
+        "valid": true,
+        "nodeCount": 9,
+        "reviewed_warnings": []
+      },
+      "active": false,
+      "live_status": "Inactive utility/helper; fixtures and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "31",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "K0YbMsJmh16DZYvH",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "155",
+            "270"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "pending",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Inactive utility/helper fixtures verified; no automatic trigger enabled."
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 1,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "name": "revflow_connector_gateway",
+      "stage": "revflow_connector_gateway",
+      "id": "ORXJelDwPHHFyq4K",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/ORXJelDwPHHFyq4K",
+      "validation": {
+        "valid": true,
+        "nodeCount": 33
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "369",
+        "status": "success",
+        "scope": "MCP deterministic gateway fixtures after adding bounded question and opt-out Slack codes."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/connected-scenarios.json",
+        "scope": "Three native scenarios; Gmail, HubSpot, Slack and Calendar receipts verified, no mocks."
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "YItwVfjnJ4RFXw8k",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "69",
+            "70",
+            "87"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 10,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "name": "revflow_ai_gateway",
+      "stage": "revflow_ai_gateway",
+      "id": "OQBsPehQUHEIcPJL",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/OQBsPehQUHEIcPJL",
+      "validation": {
+        "valid": true,
+        "nodeCount": 8,
+        "reviewed_warnings": []
+      },
+      "active": true,
+      "live_status": "Published; native synthetic journey and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "20",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Shared native provider checks and connected journey; stage fixtures verified."
+      },
+      "version": "1a46ca1a-6c15-4e46-bade-deefdac36ada",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "connectedPresentationEvidence": {
+        "record": "docs/connected-presentation-smoke.json",
+        "model_smoke": "docs/model-current-smoke.json"
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "74UnD0xQ42As0u9X",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "67",
+            "68"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "verified",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 2,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "name": "revflow_gmail_intake",
+      "stage": "gmail",
+      "id": "3fyAjxIQcrrTMoYy",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/3fyAjxIQcrrTMoYy",
+      "validation": {
+        "valid": true,
+        "nodeCount": 9,
+        "reviewed_warnings": []
+      },
+      "active": false,
+      "live_status": "Inactive utility/helper; fixtures and saved settings verified.",
+      "fixtureEvidence": {
+        "executionId": "33",
+        "status": "success",
+        "scope": "Restored deterministic manual branch; happy/edge checks run in n8n Code nodes, no provider effects."
+      },
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "kfAxnIvIDWQS7b8m",
+        "mainPathEvidence": {
+          "passed": true,
+          "executions": [
+            "128",
+            "133"
+          ]
+        },
+        "personalOperation": {
+          "version": "owner-session-v1",
+          "activation": "pending",
+          "current_data_mode": "synthetic",
+          "personal_mode_enabled": false
+        }
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Inactive utility/helper fixtures verified; no automatic trigger enabled."
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 2,
+        "provider_authorization_pending": true
+      }
+    }
+  ],
+  "privacy": {
+    "default_saveDataSuccessExecution": "none",
+    "saveDataErrorExecution": "none",
+    "saveManualExecutions": false,
+    "successful_synthetic_stage_exceptions": [
+      "MCfInasuYuiB2xYr",
+      "y8tSFttgTxgwU1ef",
+      "Yhw9UvAXmwWt3esg",
+      "m1dqLpTtqhwtLOZe",
+      "lfV3tn5n5zpL4N8L",
+      "c17veh72ZKCFIyAu"
+    ],
+    "personal_startup_guard": true,
+    "policy_record": "docs/workflow-tracing.json"
+  },
+  "helpers": [
+    {
+      "id": "30yUVGGbnkS5Whes",
+      "name": "revflow_ai_synthetic_test",
+      "active": false,
+      "version": "f1d70e3d-c486-4376-bda3-c6ec96409a00",
+      "nodeCount": 4,
+      "validation": {
+        "valid": true,
+        "nodeCount": 4,
+        "reviewed_warnings": []
+      },
+      "url": "https://tarek1new.app.n8n.cloud/workflow/30yUVGGbnkS5Whes",
+      "fixtureEvidence": {
+        "executionId": "39",
+        "status": "success",
+        "requests": 6,
+        "valid": 6,
+        "scope": "Native OpenRouter HTTP and deterministic schema validation; synthetic fixture text only."
+      },
+      "live_status": "Inactive utility/helper; fixtures and saved settings verified.",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "Cpk6IrpcKysnuhs8"
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Inactive utility/helper fixtures verified; no automatic trigger enabled."
+      }
+    },
+    {
+      "id": "gisMpjANf88THaYS",
+      "name": "revflow_test_account_setup",
+      "active": false,
+      "version": "56ea00cd-da6b-4baa-ba08-ff097ba990ee",
+      "nodeCount": 7,
+      "validation": {
+        "valid": true,
+        "nodeCount": 7,
+        "reviewed_warnings": []
+      },
+      "url": "https://tarek1new.app.n8n.cloud/workflow/gisMpjANf88THaYS",
+      "fixtureEvidence": {
+        "executionId": "41",
+        "status": "success",
+        "scope": "Native Gmail label read/check and Calendar free/busy; no calendar writes."
+      },
+      "live_status": "Inactive utility/helper; fixtures and saved settings verified.",
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "Wh0BwFLmj0ScnqoN"
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Inactive utility/helper fixtures verified; no automatic trigger enabled."
+      },
+      "credentialBinding": {
+        "configured": true,
+        "active_types_bound": 3,
+        "provider_authorization_pending": true
+      }
+    },
+    {
+      "id": "rhirUm3IimMt6WGg",
+      "name": "revflow_model_evaluation",
+      "active": false,
+      "version": "27c809f9-b6e5-4d17-a748-172dbeeb3c05",
+      "nodeCount": 8,
+      "validation": {
+        "valid": true,
+        "nodeCount": 8,
+        "reviewed_warnings": []
+      },
+      "url": "https://tarek1new.app.n8n.cloud/workflow/rhirUm3IimMt6WGg",
+      "fixtureEvidence": {
+        "executionId": "40",
+        "status": "success",
+        "requests": 1,
+        "valid": 1,
+        "scope": "Native OpenRouter HTTP and deterministic schema validation; synthetic fixture text only."
+      },
+      "live_status": "Inactive utility/helper; fixtures and saved settings verified.",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "previousAccount": {
+        "instance": "https://tarekamrtemp.app.n8n.cloud",
+        "id": "RCLkNY28xbAXR7mb"
+      },
+      "connectedEvidence": {
+        "verified": true,
+        "record": "docs/account-migration-connected-smoke.json",
+        "scope": "Inactive utility/helper fixtures verified; no automatic trigger enabled."
+      }
+    }
+  ],
+  "credential_binding": {
+    "configured": 8,
+    "bound": true,
+    "active_authentication_bindings": 41,
+    "provider_authorization": "verified by native requests"
+  },
+  "retention_note": "Successful synthetic WF02–WF07 execution tracing enabled for presentation. Remaining workflows discard payloads; helpers restored after sanitized evidence capture.",
+  "validation_warning_review": "Follow-up transaction grouping repaired and validated. Active authentication types are bound by saved credential IDs; unused legacy credential references are not used by nodes.",
+  "final_state": {
+    "workflows": 22,
+    "active": 14,
+    "policy_routing": "Authenticated connector gateway to an expiring owner-operated HTTPS session",
+    "data_mode": "synthetic",
+    "status": "verified"
+  },
+  "previous_account_evidence": {
+    "instance": "https://tarekamrtemp.app.n8n.cloud",
+    "live_model_tests": {
+      "status": "passed",
+      "model": "stealth/space-bunny-alpha",
+      "requests": 112,
+      "versions": 2,
+      "report": "evaluation/results-recorded-live.json",
+      "smoke": "docs/model-smoke.json",
+      "historical": true
+    },
+    "connector_bridge": {
+      "status": "connected synthetic tests passed",
+      "scope": "Synthetic content and configured test routing addresses only"
+    },
+    "archived_experiment": "tWRpzKqlGpKr1U5x",
+    "current_model_smoke": {
+      "record": "docs/model-current-smoke.json",
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "requests": 6,
+      "valid": 6
+    }
+  },
+  "connector_bridge": {
+    "status": "connected synthetic journey verified",
+    "scope": "Synthetic fixtures and configured self-inbox routing only",
+    "record": "docs/account-migration-connected-smoke.json"
+  },
+  "current_model_smoke": {
+    "status": "passed",
+    "model": "nvidia/nemotron-3-super-120b-a12b:free",
+    "requests": 6,
+    "valid": 6,
+    "executionId": "39",
+    "record": "docs/account-migration-model-smoke.json"
+  },
+  "pending_consolidation": {
+    "name": "revflow_lead_to_revenue",
+    "id": "9edsFvbor95eIqtM",
+    "url": "https://tarek1new.app.n8n.cloud/workflow/9edsFvbor95eIqtM",
+    "active": true,
+    "nodeCount": 85,
+    "subworkflows": 0,
+    "credential_bindings": 29,
+    "validation": {
+      "valid": true,
+      "nodeCount": 85
+    },
+    "fixtureEvidence": {
+      "executionId": "614",
+      "status": "success",
+      "scope": "Deterministic business, AI/schema, provider, SSRF and session fixtures; no external side effects."
+    },
+    "connectedEvidence": {
+      "verified": false,
+      "blocker": "The local Cloudflare tunnel has no stable ready connection (HTTP 530). The owner restarted it; TCP connectivity was verified, and future startup now uses HTTP/2 with an authenticated round-trip readiness check."
+    },
+    "retention": {
+      "executionOrder": "v1",
+      "availableInMCP": true,
+      "timezone": "UTC",
+      "saveExecutionProgress": false,
+      "saveManualExecutions": false,
+      "saveDataErrorExecution": "none",
+      "saveDataSuccessExecution": "none",
+      "executionTimeout": 180,
+      "callerPolicy": "none"
+    },
+    "reviewed_warnings": [
+      "Multiple authenticated entries and shared failure paths cannot all fit single-entry/single-exit groups; they remain visible on the one canvas."
+    ],
+    "evidence": "docs/unified-workflow.json"
+  }
+}

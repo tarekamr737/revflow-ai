@@ -1,0 +1,21 @@
+{
+  "tested_at": "2026-10-08T16:35:27.555Z",
+  "mode": "connected synthetic",
+  "event_id": "8429769c-40ce-480a-808e-dce12b90baf2",
+  "lead_id": "2e60f187-29de-48e3-867e-9d429d708144",
+  "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+  "lead_status": "MEETING_BOOKED",
+  "crm_synced": true,
+  "approval_ids": [
+    "7803242a-a3e7-417b-868b-dd4b1b2d9866",
+    "48123dd5-d344-4cc2-8406-8af0fcf14add"
+  ],
+  "emails": 1,
+  "bookings": 1,
+  "mock_receipts": 0,
+  "missing_action_audits": 0,
+  "ai_runs": 3,
+  "all_ai_successful": true,
+  "duplicate_send_suppressed": true,
+  "duplicate_booking_suppressed": true
+}

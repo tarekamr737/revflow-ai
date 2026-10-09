@@ -1,0 +1,5 @@
+[
+ {"source":"web","source_event_id":"demo-hot-001","name":"Synthetic CTO","email":"cto@example.com","company_name":"Example Labs","company_domain":"example.com","job_title":"CTO","country":"EG","message":"We need a demo of lead routing. I own the buying decision, have approved budget, and need to start this month.","consent":true},
+ {"source":"web","source_event_id":"demo-warm-001","email":"ops@example.net","company_name":"Example Operations","job_title":"Manager","message":"We are comparing lead automation tools for next quarter. Could you share pricing?","consent":true},
+ {"source":"web","source_event_id":"demo-low-001","email":"research@example.org","message":"I am a student researching sales automation for a school assignment.","consent":false}
+]

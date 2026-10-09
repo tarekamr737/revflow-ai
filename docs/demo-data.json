@@ -1,0 +1,36 @@
+[
+  {
+    "source": "portfolio-sample",
+    "source_event_id": "sample-hot-001",
+    "name": "Synthetic CTO",
+    "email": "portfolio-hot@example.com",
+    "company_name": "Example Labs",
+    "company_domain": "example.com",
+    "job_title": "CTO",
+    "country": "EG",
+    "message": "We need a demo of lead routing. I own the buying decision, have approved budget, and need to start this month.",
+    "consent": true
+  },
+  {
+    "source": "portfolio-sample",
+    "source_event_id": "sample-warm-001",
+    "name": "Synthetic Operations Manager",
+    "email": "portfolio-warm@example.net",
+    "company_name": "Example Operations",
+    "company_domain": "example.net",
+    "job_title": "Manager",
+    "message": "We are comparing lead automation tools for next quarter. Could you share pricing?",
+    "consent": true
+  },
+  {
+    "source": "portfolio-sample",
+    "source_event_id": "sample-student-001",
+    "name": "Synthetic Student",
+    "email": "portfolio-student@example.org",
+    "company_name": "",
+    "company_domain": "example.org",
+    "job_title": "Student",
+    "message": "I am a student researching sales automation for a school assignment.",
+    "consent": false
+  }
+]

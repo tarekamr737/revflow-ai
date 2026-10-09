@@ -1,0 +1,198 @@
+{
+  "generated_at": "2026-10-01T21:13:18.925Z",
+  "mode": "recorded-live",
+  "dataset": {
+    "cases": 240,
+    "template_families": 15,
+    "limitations": "Synthetic template expansion, not independent real-world examples; no human agreement study. Exact duplicate semantic inputs reuse one recorded model response per prompt version; replay durations are not model latency.",
+    "unique_valid_lead_texts": 56
+  },
+  "live_model_evaluation": "measured through n8n; exact-response replay through isolated PostgreSQL production functions",
+  "results": [
+    {
+      "prompt_version": "qualification-v1",
+      "model": "stealth/space-bunny-alpha",
+      "models": [
+        {
+          "model": "stealth/space-bunny-alpha",
+          "runs": 224
+        }
+      ],
+      "scope": "Recorded live model responses; deterministic qualification/scoring replay; all business effects disabled",
+      "n": 240,
+      "qualified_n": 224,
+      "macro_f1": 1,
+      "per_class": {
+        "demo": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 32
+        },
+        "pricing": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 48
+        },
+        "purchase": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "support": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 32
+        },
+        "partnership": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "job": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "student": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "spam": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "unknown": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 32
+        }
+      },
+      "intent_accuracy": 1,
+      "urgency_accuracy": 0.9642857142857143,
+      "qualification_agreement": 1,
+      "schema_validity": 1,
+      "successful_ai_runs": 224,
+      "input_tokens": 31993,
+      "output_tokens": 16516,
+      "cost_usd": 0,
+      "external_side_effects": 0,
+      "replay_latency_mean_ms": 0.02924553571427881,
+      "live_model_requests": 56,
+      "request_to_validation_mean_ms": 4418.446428571428,
+      "request_to_validation_p95_ms": 6996,
+      "request_duration_scope": "n8n request clock through schema validation, excludes pacing wait; includes node handoff"
+    },
+    {
+      "prompt_version": "qualification-v2",
+      "model": "stealth/space-bunny-alpha",
+      "models": [
+        {
+          "model": "stealth/space-bunny-alpha",
+          "runs": 224
+        }
+      ],
+      "scope": "Recorded live model responses; deterministic qualification/scoring replay; all business effects disabled",
+      "n": 240,
+      "qualified_n": 224,
+      "macro_f1": 1,
+      "per_class": {
+        "demo": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 32
+        },
+        "pricing": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 48
+        },
+        "purchase": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "support": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 32
+        },
+        "partnership": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "job": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "student": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "spam": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "unknown": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 32
+        }
+      },
+      "intent_accuracy": 1,
+      "urgency_accuracy": 0.9285714285714286,
+      "qualification_agreement": 0.95,
+      "schema_validity": 1,
+      "successful_ai_runs": 224,
+      "input_tokens": 31433,
+      "output_tokens": 19207,
+      "cost_usd": 0,
+      "external_side_effects": 0,
+      "replay_latency_mean_ms": 0.02677812499999277,
+      "live_model_requests": 56,
+      "request_to_validation_mean_ms": 5367.160714285715,
+      "request_to_validation_p95_ms": 8373,
+      "request_duration_scope": "n8n request clock through schema validation, excludes pacing wait; includes node handoff"
+    }
+  ],
+  "evidence": {
+    "workflow_id": "RCLkNY28xbAXR7mb",
+    "execution_ids": [
+      "54",
+      "55",
+      "56",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64"
+    ],
+    "requests": 112,
+    "valid": 112
+  }
+}

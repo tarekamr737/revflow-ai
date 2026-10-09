@@ -1,0 +1,30 @@
+{
+  "verified_at": "2026-10-09T16:46:50Z",
+  "workflow_id": "9edsFvbor95eIqtM",
+  "cause": "Cached company receipt no longer matched a HubSpot company; contact creation stopped before drafting.",
+  "fix": "Revalidate shared company references, reconcile missing synthetic fixtures with auditable repair actions, preserve old failures, and show processing/failure states before review.",
+  "validation": {
+    "sdk_valid": true,
+    "nodes": 85,
+    "native_fixture_execution": "751",
+    "native_fixture_status": "success",
+    "local_tests_passed": 70,
+    "app_health_http": 200,
+    "authenticated_progress_http": 200
+  },
+  "recovery": {
+    "lead_id": "c3956831-0497-4d58-96ad-ade605fe405c",
+    "event_id": "814954a6-dd52-4ac8-b633-3e49d9162eb4",
+    "correlation_id": "4328650a-e931-40c7-8d23-5bfb6eb86c4b",
+    "crm": "synced",
+    "draft": "draft",
+    "pending_approval_id": "77e8d88f-4d8d-48d0-9118-cff1b807f3df",
+    "completed_contacts": 1,
+    "completed_deals": 1,
+    "email_send_actions": 0,
+    "processing_error": null,
+    "recipient_matches_configuration": true,
+    "repeat_crm": "no-op"
+  },
+  "limits": "No email sent or booking performed; full three-situation unified cutover remains pending. Dashboard behavior verified with shipped-script DOM tests; visual browser verification unavailable."
+}

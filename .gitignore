@@ -1,0 +1,20 @@
+node_modules/
+.cache/
+.tmp/
+.tools/
+.data/
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+config/personal.json
+config/connected.local.json
+
+# Local account configuration and developer tooling
+config/n8n.json
+.agents/
+.codex/
+.aws/
+.DS_Store
+Thumbs.db

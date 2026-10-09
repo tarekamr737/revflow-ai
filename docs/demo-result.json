@@ -1,0 +1,237 @@
+{
+  "mode": "mock",
+  "lead_status": "MEETING_BOOKED",
+  "duplicate_suppressed": true,
+  "dashboard": {
+    "mode": "mock",
+    "funnel": [
+      {
+        "status": "CONTACTED",
+        "count": 1
+      },
+      {
+        "status": "DISQUALIFIED",
+        "count": 1
+      },
+      {
+        "status": "MEETING_BOOKED",
+        "count": 1
+      }
+    ],
+    "ai": {
+      "runs": 6,
+      "latency_ms": "0.56",
+      "cost_usd": "0",
+      "failures": 0
+    },
+    "ops": {
+      "approvals": 0,
+      "dead_letters": 0,
+      "uncertain": 0,
+      "completed": 15
+    },
+    "events": [
+      {
+        "event_type": "SCORE_COMPUTED",
+        "correlation_id": "2f404c9e-f9f9-45a2-ac45-5c18e968f458",
+        "created_at": "2026-10-02T14:35:29.166Z"
+      },
+      {
+        "event_type": "STATE_CHANGED",
+        "correlation_id": "2f404c9e-f9f9-45a2-ac45-5c18e968f458",
+        "created_at": "2026-10-02T14:35:29.166Z"
+      },
+      {
+        "event_type": "LEAD_QUALIFIED",
+        "correlation_id": "2f404c9e-f9f9-45a2-ac45-5c18e968f458",
+        "created_at": "2026-10-02T14:35:29.161Z"
+      },
+      {
+        "event_type": "LEAD_ENRICHED",
+        "correlation_id": "2f404c9e-f9f9-45a2-ac45-5c18e968f458",
+        "created_at": "2026-10-02T14:35:29.157Z"
+      },
+      {
+        "event_type": "LEAD_NORMALIZED",
+        "correlation_id": "2f404c9e-f9f9-45a2-ac45-5c18e968f458",
+        "created_at": "2026-10-02T14:35:29.153Z"
+      },
+      {
+        "event_type": "LEAD_RECEIVED",
+        "correlation_id": "2f404c9e-f9f9-45a2-ac45-5c18e968f458",
+        "created_at": "2026-10-02T14:35:29.152Z"
+      },
+      {
+        "event_type": "STATE_CHANGED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.146Z"
+      },
+      {
+        "event_type": "EMAIL_SENT",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.146Z"
+      },
+      {
+        "event_type": "ACTION_COMPLETED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.144Z"
+      },
+      {
+        "event_type": "EMAIL_DRAFTED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.137Z"
+      },
+      {
+        "event_type": "CRM_SYNCED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.122Z"
+      },
+      {
+        "event_type": "ACTION_COMPLETED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.120Z"
+      },
+      {
+        "event_type": "ACTION_COMPLETED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.117Z"
+      },
+      {
+        "event_type": "ACTION_COMPLETED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.115Z"
+      },
+      {
+        "event_type": "ACTION_COMPLETED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.112Z"
+      },
+      {
+        "event_type": "SCORE_COMPUTED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.105Z"
+      },
+      {
+        "event_type": "STATE_CHANGED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.105Z"
+      },
+      {
+        "event_type": "LEAD_QUALIFIED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.102Z"
+      },
+      {
+        "event_type": "LEAD_ENRICHED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.097Z"
+      },
+      {
+        "event_type": "LEAD_NORMALIZED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.092Z"
+      },
+      {
+        "event_type": "LEAD_RECEIVED",
+        "correlation_id": "a3f3d6c0-4d88-46fe-9bd7-3db00e7db17d",
+        "created_at": "2026-10-02T14:35:29.090Z"
+      },
+      {
+        "event_type": "ACTION_COMPLETED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.088Z"
+      },
+      {
+        "event_type": "ACTION_COMPLETED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.075Z"
+      },
+      {
+        "event_type": "STATE_CHANGED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.054Z"
+      },
+      {
+        "event_type": "MEETING_BOOKED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.054Z"
+      },
+      {
+        "event_type": "ACTION_COMPLETED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.051Z"
+      },
+      {
+        "event_type": "APPROVAL_DECIDED",
+        "correlation_id": "7cfe63eb-34ac-4ddd-8150-def600407131",
+        "created_at": "2026-10-02T14:35:29.034Z"
+      },
+      {
+        "event_type": "ACTION_COMPLETED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.030Z"
+      },
+      {
+        "event_type": "APPROVAL_REQUESTED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.027Z"
+      },
+      {
+        "event_type": "MEETING_PROPOSED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.024Z"
+      },
+      {
+        "event_type": "MEETING_PROPOSED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.021Z"
+      },
+      {
+        "event_type": "MEETING_PROPOSED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.017Z"
+      },
+      {
+        "event_type": "STATE_CHANGED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.015Z"
+      },
+      {
+        "event_type": "STATE_CHANGED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.006Z"
+      },
+      {
+        "event_type": "REPLY_RECEIVED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:29.005Z"
+      },
+      {
+        "event_type": "EMAIL_SENT",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:28.996Z"
+      },
+      {
+        "event_type": "STATE_CHANGED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:28.996Z"
+      },
+      {
+        "event_type": "ACTION_COMPLETED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:28.994Z"
+      },
+      {
+        "event_type": "APPROVAL_DECIDED",
+        "correlation_id": "b7108884-4204-4e3e-bf7a-873272412980",
+        "created_at": "2026-10-02T14:35:28.984Z"
+      },
+      {
+        "event_type": "ACTION_COMPLETED",
+        "correlation_id": "9e08ac85-1855-44d0-bc8a-6c553903c869",
+        "created_at": "2026-10-02T14:35:28.980Z"
+      }
+    ],
+    "approvals": []
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "version": "sales-v1", "approved": true,
+  "product": "RevFlow AI",
+  "claims": [{"id":"lead-routing","text":"RevFlow AI helps teams organize inbound leads and route sales follow-up."},{"id":"human-review","text":"Sensitive outreach is reviewed by a person before sending."}],
+  "allowed_urls": ["https://example.com/revflow"],
+  "cta": "Would a short discovery conversation be useful?",
+  "pricing": null,
+  "disclaimer": "Synthetic portfolio knowledge; replace and approve before live outreach."
+}

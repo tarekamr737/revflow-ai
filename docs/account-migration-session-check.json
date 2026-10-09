@@ -1,0 +1,8 @@
+{
+  "closed_status_http": 500,
+  "offline_http_status": 500,
+  "offline_fails_closed": true,
+  "graceful_stop_verified": true,
+  "restart_verified": true,
+  "final_runtime": "connected synthetic; session running"
+}

@@ -1,0 +1,188 @@
+{
+  "tested_at": "2026-10-08T17:48:34.593Z",
+  "mode": "connected synthetic",
+  "recipient_configured": true,
+  "scenarios": [
+    {
+      "scenario": "meeting",
+      "event_id": "e308e535-c861-4473-90e1-3187203368b1",
+      "lead_id": "0acdfc69-ec4e-4270-b60d-d23779bcc3a8",
+      "correlation_id": "b15c3e21-556a-4391-a09e-b243cc048205",
+      "status": "MEETING_BOOKED",
+      "opted_out": false,
+      "email_approval": "535d4a51-aac3-4ee3-9513-c69dd0a7ca92",
+      "booking_approval": "06e381b1-8492-4f65-9254-de875d862326",
+      "crm": {
+        "contact_id": "887011618012",
+        "company_id": "450468787421",
+        "deal_id": "525457811654",
+        "status": "synced"
+      },
+      "slack_event": "MEETING_BOOKED",
+      "emails": 1,
+      "bookings": 1,
+      "crm_tasks": 0,
+      "slack_alerts": 3,
+      "mock_receipts": 0,
+      "missing_action_audits": 0
+    },
+    {
+      "scenario": "question",
+      "event_id": "bf845c0a-b047-496a-9559-c6d44b7ec447",
+      "lead_id": "5e556976-52b4-49f5-af74-675db54cd737",
+      "correlation_id": "2b2dd856-b54f-466b-910a-d46d98057011",
+      "status": "RESPONDED",
+      "opted_out": false,
+      "email_approval": "a04143d0-7d10-4d5e-bdc9-c6b4e12322a0",
+      "booking_approval": null,
+      "crm": {
+        "contact_id": "887069429969",
+        "company_id": "450468787421",
+        "deal_id": "525453996227",
+        "status": "synced"
+      },
+      "slack_event": "REPLY_REVIEW_REQUESTED",
+      "emails": 1,
+      "bookings": 0,
+      "crm_tasks": 1,
+      "slack_alerts": 2,
+      "mock_receipts": 0,
+      "missing_action_audits": 0
+    },
+    {
+      "scenario": "unsubscribe",
+      "event_id": "b0f12656-7860-48bb-9712-cde946b7d413",
+      "lead_id": "fd245158-4759-432f-a6ba-a0af933828f7",
+      "correlation_id": "36014c18-033a-45d3-bd26-961f781f1cb9",
+      "status": "CONTACTED",
+      "opted_out": true,
+      "email_approval": "04ff4f5e-5e07-4b94-8ba5-f5fe6273a2e4",
+      "booking_approval": null,
+      "crm": {
+        "contact_id": "887069600994",
+        "company_id": "450468787421",
+        "deal_id": "525771101385",
+        "status": "synced"
+      },
+      "slack_event": "OPTED_OUT",
+      "emails": 1,
+      "bookings": 0,
+      "crm_tasks": 0,
+      "slack_alerts": 2,
+      "mock_receipts": 0,
+      "missing_action_audits": 0
+    }
+  ],
+  "n8n_saved_stages": [
+    {
+      "id": "493",
+      "workflowId": "MCfInasuYuiB2xYr",
+      "status": "success",
+      "startedAt": "2026-10-08T17:48:27.447Z"
+    },
+    {
+      "id": "486",
+      "workflowId": "y8tSFttgTxgwU1ef",
+      "status": "success",
+      "startedAt": "2026-10-08T17:48:24.681Z"
+    },
+    {
+      "id": "484",
+      "workflowId": "Yhw9UvAXmwWt3esg",
+      "status": "success",
+      "startedAt": "2026-10-08T17:48:24.012Z"
+    },
+    {
+      "id": "480",
+      "workflowId": "m1dqLpTtqhwtLOZe",
+      "status": "success",
+      "startedAt": "2026-10-08T17:48:21.231Z"
+    },
+    {
+      "id": "477",
+      "workflowId": "lfV3tn5n5zpL4N8L",
+      "status": "success",
+      "startedAt": "2026-10-08T17:48:20.321Z"
+    },
+    {
+      "id": "475",
+      "workflowId": "c17veh72ZKCFIyAu",
+      "status": "success",
+      "startedAt": "2026-10-08T17:48:19.779Z"
+    },
+    {
+      "id": "456",
+      "workflowId": "MCfInasuYuiB2xYr",
+      "status": "success",
+      "startedAt": "2026-10-08T17:48:10.580Z"
+    },
+    {
+      "id": "449",
+      "workflowId": "y8tSFttgTxgwU1ef",
+      "status": "success",
+      "startedAt": "2026-10-08T17:48:07.764Z"
+    },
+    {
+      "id": "447",
+      "workflowId": "Yhw9UvAXmwWt3esg",
+      "status": "success",
+      "startedAt": "2026-10-08T17:48:07.007Z"
+    },
+    {
+      "id": "443",
+      "workflowId": "m1dqLpTtqhwtLOZe",
+      "status": "success",
+      "startedAt": "2026-10-08T17:48:04.286Z"
+    },
+    {
+      "id": "440",
+      "workflowId": "lfV3tn5n5zpL4N8L",
+      "status": "success",
+      "startedAt": "2026-10-08T17:48:03.210Z"
+    },
+    {
+      "id": "438",
+      "workflowId": "c17veh72ZKCFIyAu",
+      "status": "success",
+      "startedAt": "2026-10-08T17:48:02.458Z"
+    },
+    {
+      "id": "396",
+      "workflowId": "MCfInasuYuiB2xYr",
+      "status": "success",
+      "startedAt": "2026-10-08T17:40:32.849Z"
+    },
+    {
+      "id": "389",
+      "workflowId": "y8tSFttgTxgwU1ef",
+      "status": "success",
+      "startedAt": "2026-10-08T17:40:29.662Z"
+    },
+    {
+      "id": "387",
+      "workflowId": "Yhw9UvAXmwWt3esg",
+      "status": "success",
+      "startedAt": "2026-10-08T17:40:29.056Z"
+    },
+    {
+      "id": "383",
+      "workflowId": "m1dqLpTtqhwtLOZe",
+      "status": "success",
+      "startedAt": "2026-10-08T17:40:26.677Z"
+    },
+    {
+      "id": "380",
+      "workflowId": "lfV3tn5n5zpL4N8L",
+      "status": "success",
+      "startedAt": "2026-10-08T17:40:25.164Z"
+    },
+    {
+      "id": "378",
+      "workflowId": "c17veh72ZKCFIyAu",
+      "status": "success",
+      "startedAt": "2026-10-08T17:40:24.224Z"
+    }
+  ],
+  "meeting_recovery": "First reply found no free slots in the original three-day window. The same lead resumed through WF10 with an available slot; no duplicate outreach was sent. Calendar search now spans fourteen days and has a regression test.",
+  "reply_input": "Fixed synthetic text supplied through WF09; Gmail polling remains disabled."
+}

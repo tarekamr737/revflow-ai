@@ -1,0 +1,20 @@
+{
+  "verified_at": "2026-10-06T15:44:13.024Z",
+  "origin": "App Start workflow button",
+  "data_mode": "synthetic",
+  "lead_id": "e90f853c-bebc-4784-b958-58f1de7a8be0",
+  "correlation_id": "c5886b6a-ae03-4290-ad36-ca68cc6ca1d3",
+  "qualification_execution": "2243",
+  "crm_execution": "2249",
+  "stage_execution_ids": [
+    "2256",
+    "2249",
+    "2247",
+    "2243",
+    "2240",
+    "2238"
+  ],
+  "qualification_verification": "success",
+  "app_status": "QUALIFIED",
+  "protected_actions": "Pending email approval; no outbound send or booking requested for this lead."
+}

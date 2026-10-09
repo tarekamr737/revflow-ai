@@ -1,0 +1,10 @@
+import Ajv from 'ajv';
+import {intents} from './rules.mjs';
+const enumeration=values=>({type:'string',enum:values});
+const strings={type:'array',items:{type:'string'},maxItems:12};
+export const qualificationSchema={type:'object',additionalProperties:false,properties:{intent:enumeration(intents),needs:strings,pain_points:strings,buyer_role:{type:'string'},urgency:enumeration(['immediate','quarter','later','unknown']),budget_signal:enumeration(['approved','considering','unknown']),authority_signal:enumeration(['decision_maker','influencer','unknown']),purchase_intent:enumeration(['high','medium','low','unknown']),timeline:{type:'string'},sentiment:enumeration(['positive','neutral','negative']),risk_flags:strings,recommended_next_action:enumeration(['review','discovery','nurture','reject']),confidence:{type:'number',minimum:0,maximum:1},evidence:strings}};
+qualificationSchema.required=Object.keys(qualificationSchema.properties);
+export const draftSchema={type:'object',additionalProperties:false,properties:{subject:{type:'string',maxLength:160},body:{type:'string',maxLength:4000},cta:{type:'string'},claim_ids:strings},required:['subject','body','cta','claim_ids']};
+export const replySchema={type:'object',additionalProperties:false,properties:{intent:enumeration(['meeting','question','objection','unsubscribe','unknown']),confidence:{type:'number',minimum:0,maximum:1},tool:enumeration(['read_lead','read_calendar','crm_note','crm_task','external_send','deal_stage','discount','cancellation','none'])},required:['intent','confidence','tool']};
+const ajv=new Ajv({allErrors:true,strict:true});
+export const validateQualification=ajv.compile(qualificationSchema),validateDraft=ajv.compile(draftSchema),validateReply=ajv.compile(replySchema);

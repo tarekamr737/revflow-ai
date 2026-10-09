@@ -1,0 +1,473 @@
+{
+  "date": "2026-10-08",
+  "local_tests": {
+    "passed": 61,
+    "failed": 0
+  },
+  "clean_verification": {
+    "install": true,
+    "fresh_migration": true,
+    "tests": true,
+    "evaluation": true,
+    "demo": true,
+    "syntax_and_secret_patterns": true,
+    "last_passed_at": "2026-10-02T14:36:32.544Z"
+  },
+  "docker_smoke": {
+    "database": "PostgreSQL 17",
+    "migrations": 4,
+    "least_privilege_runtime_role": "revflow_app",
+    "booking": true,
+    "duplicate_suppressed": true,
+    "auth_gate": true,
+    "data_location": "D:/Docker/wsl/DockerDesktopWSL",
+    "last_passed_at": "2026-10-02T14:36:32.544Z"
+  },
+  "n8n": {
+    "cloud_instance": "https://tarekamrtemp.app.n8n.cloud",
+    "draft_workflows": 22,
+    "validated": 22,
+    "deterministic_fixture_branches_passed": 19,
+    "active_triggers": 14,
+    "main_path_db_and_provider_tests": "2026-10-06 connected native journey reaches MEETING_BOOKED; docs/connected-presentation-smoke.json and saved stage traces.",
+    "execution_payload_retention": "Successful synthetic WF02–WF07 retained; authenticated entry workflows and gateways discard payloads.",
+    "final_fixture_executions": [
+      {
+        "name": "revflow_01_lead_ingestion",
+        "executionId": "272",
+        "status": "success"
+      },
+      {
+        "name": "revflow_02_normalize_dedupe",
+        "executionId": "273",
+        "status": "success"
+      },
+      {
+        "name": "revflow_03_enrichment",
+        "executionId": "274",
+        "status": "success"
+      },
+      {
+        "name": "revflow_05_score_route",
+        "executionId": "277",
+        "status": "success"
+      },
+      {
+        "name": "revflow_audit_event",
+        "executionId": "278",
+        "status": "success"
+      },
+      {
+        "name": "revflow_04_ai_signal_extraction",
+        "executionId": "276",
+        "status": "success"
+      },
+      {
+        "name": "revflow_06_hubspot_sync",
+        "executionId": "275",
+        "status": "success"
+      },
+      {
+        "name": "revflow_07_outreach_generate",
+        "executionId": "279",
+        "status": "success"
+      },
+      {
+        "name": "revflow_08_outreach_policy_hitl_send",
+        "executionId": "280",
+        "status": "success"
+      },
+      {
+        "name": "revflow_09_reply_agent",
+        "executionId": "281",
+        "status": "success"
+      },
+      {
+        "name": "revflow_10_meeting_lifecycle",
+        "executionId": "282",
+        "status": "success"
+      },
+      {
+        "name": "revflow_followup_scheduler",
+        "executionId": "283",
+        "status": "success"
+      },
+      {
+        "name": "revflow_11_error_dlq",
+        "executionId": "284",
+        "status": "success"
+      },
+      {
+        "name": "revflow_12_evaluation",
+        "executionId": "285",
+        "status": "success"
+      },
+      {
+        "name": "revflow_retry_scheduler",
+        "executionId": "286",
+        "status": "success"
+      },
+      {
+        "name": "revflow_meeting_reminders",
+        "executionId": "287",
+        "status": "success"
+      },
+      {
+        "name": "revflow_connector_gateway",
+        "executionId": "288",
+        "status": "success"
+      },
+      {
+        "name": "revflow_ai_gateway",
+        "executionId": "289",
+        "status": "success"
+      },
+      {
+        "name": "revflow_gmail_intake",
+        "executionId": "290",
+        "status": "success"
+      }
+    ],
+    "helper_fixture_branches_passed": 3,
+    "retention_disabled_workflows": 16
+  },
+  "local_n8n_audit": {
+    "version": "2.41.5",
+    "outdated_version_finding_cleared": true,
+    "community_packages_enabled": false,
+    "public_api_enabled": false,
+    "diagnostics_enabled": false
+  },
+  "browser": {
+    "desktop": "docs/dashboard-desktop.png",
+    "mobile": "docs/dashboard-mobile.png",
+    "mobile_width": 390,
+    "horizontal_overflow": false,
+    "browser_errors": 0,
+    "review_approve_resume": true,
+    "mode": "mock"
+  },
+  "evaluation": {
+    "cases": 240,
+    "template_families": 15,
+    "mode": "recorded-live plus explicit mock baseline",
+    "live_model_requests": 112,
+    "unique_valid_texts_per_version": 56,
+    "report": "evaluation/results-recorded-live.json",
+    "human_agreement": "unmeasured"
+  },
+  "connector_bridge": "synthetic gates and connected native credentials tested",
+  "external_integrations": "Native CRM, approved Gmail delivery, Calendar booking and Slack audit notifications verified using synthetic content; connected session left running.",
+  "recovery": {
+    "initial_state_and_approval": true,
+    "followup_counter_once": true,
+    "email_receipt_and_thread": true
+  },
+  "cloud_e2e": "docs/cloud-e2e.json",
+  "temporary_tunnel_closed": false,
+  "local_runtime_restored": "live synthetic",
+  "personal_operation": {
+    "status": "complete; connected synthetic activation verified",
+    "updated_workflow_fixtures": [
+      {
+        "name": "revflow_01_lead_ingestion",
+        "execution_id": "293",
+        "status": "success"
+      },
+      {
+        "name": "revflow_02_normalize_dedupe",
+        "execution_id": "294",
+        "status": "success"
+      },
+      {
+        "name": "revflow_03_enrichment",
+        "execution_id": "295",
+        "status": "success"
+      },
+      {
+        "name": "revflow_05_score_route",
+        "execution_id": "296",
+        "status": "success"
+      },
+      {
+        "name": "revflow_audit_event",
+        "execution_id": "297",
+        "status": "success"
+      },
+      {
+        "name": "revflow_04_ai_signal_extraction",
+        "execution_id": "298",
+        "status": "success"
+      },
+      {
+        "name": "revflow_06_hubspot_sync",
+        "execution_id": "299",
+        "status": "success"
+      },
+      {
+        "name": "revflow_07_outreach_generate",
+        "execution_id": "300",
+        "status": "success"
+      },
+      {
+        "name": "revflow_08_outreach_policy_hitl_send",
+        "execution_id": "301",
+        "status": "success"
+      },
+      {
+        "name": "revflow_09_reply_agent",
+        "execution_id": "302",
+        "status": "success"
+      },
+      {
+        "name": "revflow_10_meeting_lifecycle",
+        "execution_id": "303",
+        "status": "success"
+      },
+      {
+        "name": "revflow_followup_scheduler",
+        "execution_id": "304",
+        "status": "success"
+      },
+      {
+        "name": "revflow_11_error_dlq",
+        "execution_id": "305",
+        "status": "success"
+      },
+      {
+        "name": "revflow_12_evaluation",
+        "execution_id": "306",
+        "status": "success"
+      },
+      {
+        "name": "revflow_retry_scheduler",
+        "execution_id": "307",
+        "status": "success"
+      },
+      {
+        "name": "revflow_meeting_reminders",
+        "execution_id": "308",
+        "status": "success"
+      },
+      {
+        "name": "revflow_gmail_intake",
+        "execution_id": "309",
+        "status": "success"
+      },
+      {
+        "name": "revflow_connector_gateway",
+        "execution_id": "312",
+        "status": "success"
+      },
+      {
+        "name": "revflow_ai_gateway",
+        "execution_id": "292",
+        "status": "success"
+      }
+    ],
+    "model_smoke": {
+      "execution_id": "310",
+      "status": "success",
+      "scope": "Manual live qualification through updated AI code; runtime permission and response handoff pinned to synthetic fixtures."
+    },
+    "provider_rejection": {
+      "execution_id": "311",
+      "status": "error",
+      "error_code": "AI_PROVIDER_REJECTED",
+      "scope": "Expected 429 failure with pinned provider response; no live provider request."
+    },
+    "all_cloud_workflows_inactive": false,
+    "schedules_and_gmail_paused": true,
+    "personal_data_enabled": false,
+    "session_restart_cloud_smoke": "passed: new endpoint registered without workflow URL edits; MCP 367",
+    "backup": {
+      "format": "PostgreSQL custom archive",
+      "directory": ".data/backups",
+      "archive_list_verified": true
+    },
+    "browser": {
+      "desktop": [
+        1440,
+        1000
+      ],
+      "mobile": [
+        390,
+        844
+      ],
+      "horizontal_overflow": false,
+      "errors": 0,
+      "guided_mock_booking": true,
+      "final_walkthrough": {
+        "date": "2026-10-02T14:36:32.544Z",
+        "mode": "mock Docker/PostgreSQL",
+        "status": "MEETING_BOOKED",
+        "errors": 0,
+        "screenshot": "docs/dashboard-delivery.png"
+      }
+    },
+    "mode_isolation": {
+      "trusted_server_origin": true,
+      "company_receipts_scoped_by_mode": true,
+      "cross_mode_actions_blocked": true,
+      "queued_workers_skip_other_mode": true,
+      "legacy_receipts_and_ai_provenance_checked": true
+    },
+    "last_checked_at": "2026-10-02T14:31:03.863Z",
+    "active_workflows": 14,
+    "graceful_stop": "passed; session unregistered, owned helpers closed, mock mode restored",
+    "offline_failure": {
+      "executionId": "398",
+      "error": "SESSION_OFFLINE",
+      "expected": true,
+      "production_status_http": 500
+    },
+    "connected_owner_flow": {
+      "tested_at": "2026-10-02T14:23:50.986Z",
+      "mode": "connected synthetic",
+      "event_id": "acf7cc97-3c60-4ba9-95b9-6a317ec9ab48",
+      "lead_id": "5e30a620-f900-446b-b128-fb23295c97ca",
+      "correlation_id": "f8bc4fdd-6f0c-4990-87ba-d0e610c830cf",
+      "lead_status": "MEETING_BOOKED",
+      "crm_synced": true,
+      "approval_ids": [
+        "0878c4b7-0842-42ab-a568-2fc0063635b1",
+        "7deb8c9a-fc83-4dcd-9727-f7426686f0ed"
+      ],
+      "emails": 1,
+      "bookings": 1,
+      "mock_receipts": 0,
+      "missing_action_audits": 0,
+      "ai_runs": 3,
+      "all_ai_successful": true,
+      "duplicate_send_suppressed": true,
+      "duplicate_booking_suppressed": true
+    },
+    "sample_data": {
+      "record": "docs/demo-data.json",
+      "verified": true,
+      "results": [
+        {
+          "route": "HOT",
+          "score": 100,
+          "approval_required": true
+        },
+        {
+          "route": "WARM",
+          "score": 78,
+          "status": "CONTACTED"
+        },
+        {
+          "route": "REJECT",
+          "score": 0,
+          "status": "DISQUALIFIED",
+          "sent": false
+        }
+      ]
+    }
+  },
+  "ui_refinement": {
+    "invalid_approver_actions_disabled": true,
+    "guide": "docs/presentation-guide.md",
+    "mode": "mock Docker/PostgreSQL",
+    "lead_search_and_reopen": true,
+    "browser_js_errors": 0,
+    "guided_flow": "MEETING_BOOKED",
+    "horizontal_overflow": false,
+    "cloud_workflow_executions": 0,
+    "reference_copy_feedback": "Copied",
+    "mobile_lead_form_overflow": false,
+    "invalid_workspace_token_recovery": true,
+    "local_tests": {
+      "failed": 0,
+      "passed": 54
+    },
+    "recorded_at": "2026-10-03T19:44:48.1032273Z",
+    "accessibility": {
+      "violations": 0,
+      "axe_version": "4.12.1",
+      "manual_review": "Nontext completed-step checkmark contrast",
+      "minimum_icon_contrast": 3,
+      "completed_step_contrast": 6.33
+    },
+    "screenshots": [
+      "docs/dashboard-modern-desktop.png",
+      "docs/dashboard-modern-mobile.png"
+    ],
+    "selected_audit_rows": 30,
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        320,
+        740
+      ]
+    ],
+    "separate_email_booking_approvals": true,
+    "keyboard_tab_navigation": true,
+    "skill": "impeccable",
+    "rejection_feedback": "Action rejected",
+    "syntax_and_secret_patterns": "passed"
+  },
+  "workspace_processing_regression": {
+    "verified_date": "2026-10-08",
+    "test": "tests/dashboard.test.mjs",
+    "queued_event_without_lead_id": "passed",
+    "null_lead_id_and_missing_review": "passed",
+    "queued_to_qualified_refresh": "passed",
+    "focused_approval_queue": "passed",
+    "all_leads_toggle": "passed",
+    "rejected_action_feedback": "passed",
+    "refresh_while_review_loading": "passed",
+    "browser_fixture_errors": 0,
+    "browser_fixture_provider_calls": 0,
+    "mobile_width": 390,
+    "horizontal_overflow": false,
+    "stored_lead_browser_status": "QUALIFIED",
+    "stored_lead_browser_errors": 0,
+    "syntax_and_secret_patterns": "passed"
+  },
+  "connected_presentation": {
+    "verified_at": "2026-10-06T15:36:50.386Z",
+    "guide": "docs/presentation-guide.md",
+    "native_journey": "docs/connected-presentation-smoke.json",
+    "saved_executions": "docs/connected-workflow-executions.json",
+    "model_smoke": "docs/model-current-smoke.json",
+    "model": "nvidia/nemotron-3-super-120b-a12b:free",
+    "native_model_fixture_requests": 6,
+    "valid_model_fixtures": 6,
+    "synthetic_execution_tracing": true,
+    "personal_startup_blocked_while_tracing": true,
+    "authenticated_payload_retention": false,
+    "session_running": true,
+    "browser": {
+      "lead_status": "MEETING_BOOKED",
+      "mode": "Connected · Synthetic data",
+      "visible_demo_portfolio_cv_phrases": false,
+      "workflow_links": 7,
+      "mobile_width": 390,
+      "horizontal_overflow": false,
+      "errors": 0,
+      "screenshots": [
+        "docs/connected-workspace.png",
+        "docs/connected-workspace-mobile.png",
+        "docs/connected-n8n-execution.png"
+      ]
+    }
+  },
+  "connected_scenarios": {
+    "record": "docs/connected-scenarios.json",
+    "situations": 3,
+    "emails": 3,
+    "bookings": 1,
+    "crm_tasks": 1,
+    "slack_alerts": 7,
+    "mock_receipts": 0,
+    "missing_action_audits": 0
+  }
+}

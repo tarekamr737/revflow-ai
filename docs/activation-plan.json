@@ -1,0 +1,124 @@
+{
+  "status": "verified",
+  "data_mode": "synthetic",
+  "personal_mode_enabled": false,
+  "count": 14,
+  "workflows": [
+    {
+      "name": "revflow_01_lead_ingestion",
+      "id": "fYKMJx8pwrtjfGpB",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/fYKMJx8pwrtjfGpB"
+    },
+    {
+      "name": "revflow_02_normalize_dedupe",
+      "id": "c17veh72ZKCFIyAu",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/c17veh72ZKCFIyAu"
+    },
+    {
+      "name": "revflow_03_enrichment",
+      "id": "lfV3tn5n5zpL4N8L",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/lfV3tn5n5zpL4N8L"
+    },
+    {
+      "name": "revflow_05_score_route",
+      "id": "Yhw9UvAXmwWt3esg",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/Yhw9UvAXmwWt3esg"
+    },
+    {
+      "name": "revflow_04_ai_signal_extraction",
+      "id": "m1dqLpTtqhwtLOZe",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/m1dqLpTtqhwtLOZe"
+    },
+    {
+      "name": "revflow_06_hubspot_sync",
+      "id": "y8tSFttgTxgwU1ef",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/y8tSFttgTxgwU1ef"
+    },
+    {
+      "name": "revflow_07_outreach_generate",
+      "id": "MCfInasuYuiB2xYr",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/MCfInasuYuiB2xYr"
+    },
+    {
+      "name": "revflow_08_outreach_policy_hitl_send",
+      "id": "XuEWSfd2UV1KH9zJ",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/XuEWSfd2UV1KH9zJ"
+    },
+    {
+      "name": "revflow_09_reply_agent",
+      "id": "yi9xLmEv1TJVM5H6",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/yi9xLmEv1TJVM5H6"
+    },
+    {
+      "name": "revflow_10_meeting_lifecycle",
+      "id": "ATOVE0vQQcENQJvB",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/ATOVE0vQQcENQJvB"
+    },
+    {
+      "name": "revflow_followup_scheduler",
+      "id": "QsVSqvRqN5GW8iAw",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/QsVSqvRqN5GW8iAw"
+    },
+    {
+      "name": "revflow_11_error_dlq",
+      "id": "3EJQ4oq50SwNkOjD",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/3EJQ4oq50SwNkOjD"
+    },
+    {
+      "name": "revflow_connector_gateway",
+      "id": "ORXJelDwPHHFyq4K",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/ORXJelDwPHHFyq4K"
+    },
+    {
+      "name": "revflow_ai_gateway",
+      "id": "OQBsPehQUHEIcPJL",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/OQBsPehQUHEIcPJL"
+    }
+  ],
+  "enable_authenticated_resume": [
+    "revflow_08_outreach_policy_hitl_send",
+    "revflow_09_reply_agent"
+  ],
+  "keep_disabled": [
+    "Gmail label intake",
+    "all Due Schedule nodes",
+    "three test helpers"
+  ],
+  "final_checks": [
+    "Publish through n8n MCP only",
+    "Register/close/restart a local HTTPS session",
+    "Run guided connected synthetic CRM/email/reply/booking path",
+    "Repeat protected actions and check canonical receipts/audit records"
+  ],
+  "owner_approved": true,
+  "instance": "https://tarek1new.app.n8n.cloud",
+  "previous_account_evidence": {
+    "instance": "https://tarekamrtemp.app.n8n.cloud",
+    "verified_at": "2026-10-02T14:31:03.863Z",
+    "evidence": "docs/connected-owner-smoke.json",
+    "session_restart_verified": true,
+    "graceful_stop_verified": true,
+    "offline_http_status": 500,
+    "final_runtime": "mock; session closed",
+    "mcp_main_path": {
+      "executionId": "367",
+      "status": "success",
+      "scope": "Only authenticated trigger input pinned; all policy, DB, model, CRM and approval calls live; stopped at required email approval."
+    },
+    "mcp_missing_contact": {
+      "executionId": "394",
+      "status": "success"
+    },
+    "mcp_offline": {
+      "executionId": "398",
+      "status": "error",
+      "expected_error": "SESSION_OFFLINE"
+    }
+  },
+  "final_runtime": "connected synthetic; owner session running",
+  "verified_at": "2026-10-08T16:38:17.710Z",
+  "evidence": "docs/account-migration-connected-smoke.json",
+  "session_restart_verified": true,
+  "graceful_stop_verified": true,
+  "offline_http_status": 500
+}

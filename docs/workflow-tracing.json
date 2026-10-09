@@ -1,0 +1,32 @@
+{
+  "enabled": true,
+  "data_mode": "synthetic",
+  "scope": "Internal business sub-workflows only; authenticated entry points and provider gateways do not retain payloads.",
+  "workflows": [
+    {
+      "name": "revflow_02_normalize_dedupe",
+      "id": "c17veh72ZKCFIyAu"
+    },
+    {
+      "name": "revflow_03_enrichment",
+      "id": "lfV3tn5n5zpL4N8L"
+    },
+    {
+      "name": "revflow_05_score_route",
+      "id": "Yhw9UvAXmwWt3esg"
+    },
+    {
+      "name": "revflow_04_ai_signal_extraction",
+      "id": "m1dqLpTtqhwtLOZe"
+    },
+    {
+      "name": "revflow_06_hubspot_sync",
+      "id": "y8tSFttgTxgwU1ef"
+    },
+    {
+      "name": "revflow_07_outreach_generate",
+      "id": "MCfInasuYuiB2xYr"
+    }
+  ],
+  "instance": "https://tarek1new.app.n8n.cloud"
+}

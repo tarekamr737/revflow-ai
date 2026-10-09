@@ -1,0 +1,16 @@
+import {readdir,readFile} from 'node:fs/promises';
+import {spawnSync} from 'node:child_process';
+const ignored=new Set(['node_modules','.data','.cache','.tmp','.tools','.git','.agents','.codex','.aws']);
+async function walk(root){let files=[];for(const e of await readdir(root,{withFileTypes:true})){if(ignored.has(e.name)||(e.name.startsWith('.env')&&e.name!=='.env.example'))continue;const path=root+'/'+e.name;if(['./config/personal.json','./config/connected.local.json','./config/n8n.json'].includes(path))continue;if(e.isDirectory())files.push(...await walk(path));else files.push(path);}return files;}
+const files=await walk('.');let scripts=0,scanned=0;
+const secretPatterns=[/sk-(?:proj-)?[A-Za-z0-9_-]{24,}/,/xox[baprs]-[A-Za-z0-9-]{20,}/,/-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/,/postgres(?:ql)?:\/\/[^\s:@]+:[^\s@$]{24,}@/,/(?:API_TOKEN|APPROVAL_TOKEN|WEBHOOK_SECRET|N8N_GATEWAY_TOKEN)\s*[:=]\s*["']?[A-Za-z0-9_-]{32,}/];
+secretPatterns.push(/gh[pousr]_[A-Za-z0-9]{30,}/,/github_pat_[A-Za-z0-9_]{40,}/,/(?:GOOGLE_ACCESS_TOKEN|HUBSPOT_ACCESS_TOKEN|SLACK_BOT_TOKEN|AI_GATEWAY_TOKEN|N8N_INBOUND_TOKEN)\s*[:=]\s*["'][A-Za-z0-9_-]{32,}["']/);
+const tracked=spawnSync('git',['ls-files','-z'],{encoding:'utf8'});if(tracked.status===0&&tracked.stdout.split('\0').some(p=>/(?:^|\/)\.env(?:\.|$)/.test(p)&&!p.endsWith('.env.example')))throw Error('A real environment file is tracked in git.');
+if(tracked.status===0&&tracked.stdout.split('\0').some(p=>/^(?:node_modules|\.data|\.cache|\.tmp|\.tools|\.agents|\.codex|\.aws)\//.test(p)||/^config\/(?:personal|connected\.local|n8n)\.json$/.test(p)))throw Error('Private local configuration or runtime data is tracked in git.');
+for(const path of files){if(path.endsWith('.mjs')||path.endsWith('.js')){const r=spawnSync(process.execPath,['--check',path],{encoding:'utf8'});if(r.status!==0)throw Error(`Syntax check failed: ${path}`);scripts++;}if(!/\.(png|jpg|jpeg|webp|ico)$/.test(path)){const text=await readFile(path,'utf8');if(secretPatterns.some(p=>p.test(text)))throw Error(`Potential secret found: ${path}`);const emails=text.match(/[A-Za-z0-9_.+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g)||[];if(emails.some(value=>!/@(?:[a-z0-9.-]+\.)?example\.(?:com|net|org)$/i.test(value)&&! /\.(?:test|example|invalid|localhost)$/i.test(value)&&!/@revflow\.local$/i.test(value)))throw Error(`Nonfixture email address found: ${path}`);scanned++;}}
+const refs=JSON.parse(await readFile('workflows/references.json','utf8'));
+const activation=JSON.parse(await readFile('docs/activation-plan.json','utf8'));
+const allowed=new Set(activation.owner_approved&&activation.status==='verified'?activation.workflows.map(w=>w.id):[]);let active=0;
+for(const r of [...refs.workflows,...(refs.helpers||[])]){if(!r.validation?.valid||r.fixtureEvidence?.status!=='success')throw Error(`Missing MCP evidence: ${r.name}`);if(r.active){if(!allowed.has(r.id)||!r.connectedEvidence?.verified)throw Error(`Unapproved or unverified active workflow: ${r.name}`);active++;}}
+if(active!==allowed.size)throw Error('Published workflow evidence does not match the approved activation plan');
+console.log(JSON.stringify({syntax_files:scripts,secret_scanned_files:scanned,mcp_fixture_workflows:refs.workflows.length+(refs.helpers?.length||0),live_triggers_active:active}));

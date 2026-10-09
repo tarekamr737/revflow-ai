@@ -1,0 +1,48 @@
+{
+  "instance": "https://tarek1new.app.n8n.cloud",
+  "status": "verified",
+  "workflows": 22,
+  "active": 14,
+  "graph_validation_passed": 22,
+  "deterministic_fixture_workflows_passed": 19,
+  "manual_fixture_executions_used": 38,
+  "internal_credentials_saved": 3,
+  "provider_definitions_saved": 5,
+  "active_authentication_bindings": 41,
+  "openrouter_key_pending": false,
+  "provider_authorizations_pending": [],
+  "shared_error_links_pending": false,
+  "local_tests": {
+    "passed": 57,
+    "failed": 0
+  },
+  "local_runtime": "connected synthetic; session running",
+  "runtime_instance_verified": true,
+  "app_workflow_links_verified": true,
+  "previous_account_evidence": "workflows/references.json previous_account_evidence",
+  "verified_at": "2026-10-08T16:38:17.711Z",
+  "credential_bindings_verified": {
+    "workflows": 22,
+    "bindings": 41
+  },
+  "repository_check": {
+    "status": "passed",
+    "syntax_files": 46,
+    "secret_scanned_files": 138,
+    "mcp_fixture_workflows": 22,
+    "live_triggers_active": 14
+  },
+  "fixture_workflows_passed": 22,
+  "shared_error_links_verified": 18,
+  "connected_journey": "docs/account-migration-connected-smoke.json",
+  "model_checks": "docs/account-migration-model-smoke.json",
+  "final_mcp_saved_settings_verified": 22,
+  "session_restart_verified": true,
+  "presentation_stage_executions_verified": 6,
+  "browser_verified": {
+    "connected_badge": true,
+    "lead_status": "MEETING_BOOKED",
+    "approver_access_set": true,
+    "record": "docs/account-migration-workspace.png"
+  }
+}

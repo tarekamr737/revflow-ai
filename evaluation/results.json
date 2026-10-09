@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-10-02T14:35:28.147Z",
+  "mode": "mock",
+  "dataset": {
+    "cases": 240,
+    "template_families": 15,
+    "limitations": "Synthetic template expansion, not independent real-world examples; no human agreement study."
+  },
+  "live_model_evaluation": "Recorded separately in results-recorded-live.json; this mock report is not live-model evidence",
+  "results": [
+    {
+      "prompt_version": "qualification-v1",
+      "model": "deterministic-fixture-adapter",
+      "models": [
+        {
+          "model": "deterministic-fixture-adapter",
+          "runs": 224
+        }
+      ],
+      "scope": "mock regression baseline; not LLM quality evidence",
+      "n": 240,
+      "qualified_n": 224,
+      "macro_f1": 0.8814814814814814,
+      "per_class": {
+        "demo": {
+          "precision": 1,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 32
+        },
+        "pricing": {
+          "precision": 1,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "support": 48
+        },
+        "purchase": {
+          "precision": 0.5,
+          "recall": 1,
+          "f1": 0.6666666666666666,
+          "support": 16
+        },
+        "support": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 32
+        },
+        "partnership": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "job": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "student": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "spam": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "unknown": {
+          "precision": 0.6666666666666666,
+          "recall": 1,
+          "f1": 0.8,
+          "support": 32
+        }
+      },
+      "intent_accuracy": 0.8571428571428571,
+      "urgency_accuracy": 1,
+      "qualification_agreement": 0.8666666666666667,
+      "schema_validity": 1,
+      "successful_ai_runs": 224,
+      "latency_mean_ms": 0.026671875000003707,
+      "latency_p95_ms": 0.04379999999991924,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "external_side_effects": 0
+    },
+    {
+      "prompt_version": "qualification-v2",
+      "model": "deterministic-fixture-adapter",
+      "models": [
+        {
+          "model": "deterministic-fixture-adapter",
+          "runs": 224
+        }
+      ],
+      "scope": "mock regression baseline; not LLM quality evidence",
+      "n": 240,
+      "qualified_n": 224,
+      "macro_f1": 0.9259259259259258,
+      "per_class": {
+        "demo": {
+          "precision": 1,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 32
+        },
+        "pricing": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 48
+        },
+        "purchase": {
+          "precision": 0.5,
+          "recall": 1,
+          "f1": 0.6666666666666666,
+          "support": 16
+        },
+        "support": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 32
+        },
+        "partnership": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "job": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "student": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "spam": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 16
+        },
+        "unknown": {
+          "precision": 1,
+          "recall": 1,
+          "f1": 1,
+          "support": 32
+        }
+      },
+      "intent_accuracy": 0.9285714285714286,
+      "urgency_accuracy": 1,
+      "qualification_agreement": 0.9333333333333333,
+      "schema_validity": 1,
+      "successful_ai_runs": 224,
+      "latency_mean_ms": 0.020172321428564795,
+      "latency_p95_ms": 0.02449999999953434,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0,
+      "external_side_effects": 0
+    }
+  ]
+}

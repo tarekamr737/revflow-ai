@@ -1,0 +1,55 @@
+{
+  "instance": "https://tarek1new.app.n8n.cloud",
+  "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+  "lead_id": "2e60f187-29de-48e3-867e-9d429d708144",
+  "executions": [
+    {
+      "name": "revflow_02_normalize_dedupe",
+      "workflow_id": "c17veh72ZKCFIyAu",
+      "execution_id": "52",
+      "status": "success",
+      "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/c17veh72ZKCFIyAu/executions/52"
+    },
+    {
+      "name": "revflow_03_enrichment",
+      "workflow_id": "lfV3tn5n5zpL4N8L",
+      "execution_id": "54",
+      "status": "success",
+      "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/lfV3tn5n5zpL4N8L/executions/54"
+    },
+    {
+      "name": "revflow_05_score_route",
+      "workflow_id": "Yhw9UvAXmwWt3esg",
+      "execution_id": "61",
+      "status": "success",
+      "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/Yhw9UvAXmwWt3esg/executions/61"
+    },
+    {
+      "name": "revflow_04_ai_signal_extraction",
+      "workflow_id": "m1dqLpTtqhwtLOZe",
+      "execution_id": "57",
+      "status": "success",
+      "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/m1dqLpTtqhwtLOZe/executions/57"
+    },
+    {
+      "name": "revflow_06_hubspot_sync",
+      "workflow_id": "y8tSFttgTxgwU1ef",
+      "execution_id": "63",
+      "status": "success",
+      "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/y8tSFttgTxgwU1ef/executions/63"
+    },
+    {
+      "name": "revflow_07_outreach_generate",
+      "workflow_id": "MCfInasuYuiB2xYr",
+      "execution_id": "70",
+      "status": "success",
+      "correlation_id": "1aacfd0e-aced-4139-97f5-b84912f8747d",
+      "url": "https://tarek1new.app.n8n.cloud/workflow/MCfInasuYuiB2xYr/executions/70"
+    }
+  ]
+}

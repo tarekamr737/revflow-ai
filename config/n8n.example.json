@@ -1,0 +1,5 @@
+{
+  "instance": "https://your-instance.app.n8n.cloud",
+  "workflow_id": "REPLACE_WITH_WORKFLOW_ID",
+  "webhook_prefix": "revflow-unified"
+}

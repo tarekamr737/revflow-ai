@@ -1,0 +1,20 @@
+{
+  "enabled": false,
+  "model_data_acknowledged": false,
+  "allowed_emails": [],
+  "allowed_domains": [],
+  "slack_channel": "C0C6V1LKAMN",
+  "calendar_id": "primary",
+  "hubspot_pipeline": "default",
+  "hubspot_deal_stage": "appointmentscheduled",
+  "knowledge": {
+    "version": "sales-personal-v1",
+    "approved": false,
+    "product": "",
+    "claims": [],
+    "allowed_urls": [],
+    "cta": "",
+    "pricing": null,
+    "disclaimer": ""
+  }
+}

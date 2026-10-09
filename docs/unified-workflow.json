@@ -1,0 +1,65 @@
+{
+  "verified_at": "2026-10-09T13:45:09.790Z",
+  "status": "awaiting_connected_cutover",
+  "name": "revflow_lead_to_revenue",
+  "id": "9edsFvbor95eIqtM",
+  "url": "https://tarek1new.app.n8n.cloud/workflow/9edsFvbor95eIqtM",
+  "active": true,
+  "nodeCount": 85,
+  "subworkflows": 0,
+  "credential_bindings": 29,
+  "validation": {
+    "valid": true,
+    "nodeCount": 85
+  },
+  "fixtureEvidence": {
+    "executionId": "614",
+    "status": "success",
+    "scope": "Deterministic business, AI/schema, provider, SSRF and session fixtures; no external side effects."
+  },
+  "connectedEvidence": {
+    "verified": false,
+    "blocker": "The local Cloudflare tunnel has no stable ready connection (HTTP 530). The owner restarted it; TCP connectivity was verified, and future startup now uses HTTP/2 with an authenticated round-trip readiness check."
+  },
+  "retention": {
+    "executionOrder": "v1",
+    "availableInMCP": true,
+    "timezone": "UTC",
+    "saveExecutionProgress": false,
+    "saveManualExecutions": false,
+    "saveDataErrorExecution": "none",
+    "saveDataSuccessExecution": "none",
+    "executionTimeout": 180,
+    "callerPolicy": "none"
+  },
+  "reviewed_warnings": [
+    "Multiple authenticated entries and shared failure paths cannot all fit single-entry/single-exit groups; they remain visible on the one canvas."
+  ],
+  "workspace_prepared": {
+    "workspace_access": true,
+    "approver_access": true,
+    "completed_journey_open": true,
+    "live_cutover_ready": false
+  },
+  "connection_check": {
+    "checked_at": "2026-10-09T13:45:47.410Z",
+    "local_app_healthy": true,
+    "postgres_healthy": true,
+    "tunnel_ready": false,
+    "tunnel_readiness_http": 503,
+    "n8n_policy_round_trip_ready": false,
+    "n8n_policy_http": 500
+  },
+  "connection_diagnosis": {
+    "checked_at": "2026-10-09T13:59:06.756Z",
+    "app_healthy": true,
+    "dns_srv_resolution": true,
+    "tcp_7844_both_regions": true,
+    "readiness_http": 503,
+    "running_tunnel_stall": "Windows CertGetCertificateChain called from TLS certificate verification",
+    "certificate_status_endpoint_reachable": true,
+    "cryptographic_service_running": true,
+    "root_cause_confirmed": false,
+    "notes": "Observed certificate-chain verification stall; underlying cause requires Windows certificate diagnostics. No tunnel processes or system trust settings changed."
+  }
+}

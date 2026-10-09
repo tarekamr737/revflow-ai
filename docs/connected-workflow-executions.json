@@ -1,0 +1,87 @@
+{
+  "verified_at": "2026-10-06T15:34:14.049Z",
+  "data_mode": "synthetic",
+  "business_effects_file": "docs/connected-presentation-smoke.json",
+  "model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "traces": [
+    {
+      "execution_id": "2203",
+      "workflow_id": "a7u9rcmA0iCcJVlN",
+      "status": "success",
+      "correlation_id": "ad498738-39a4-449f-9ff0-ddd9877cf58a",
+      "lead_id": "36759dba-2e66-44b1-8c55-80faa23d9ddf",
+      "verification_node": "success",
+      "url": "https://tarekamrtemp.app.n8n.cloud/workflow/a7u9rcmA0iCcJVlN/executions/2203"
+    },
+    {
+      "execution_id": "2196",
+      "workflow_id": "y2tytDebvvy6TXLc",
+      "status": "success",
+      "correlation_id": "ad498738-39a4-449f-9ff0-ddd9877cf58a",
+      "lead_id": "36759dba-2e66-44b1-8c55-80faa23d9ddf",
+      "verification_node": "success",
+      "url": "https://tarekamrtemp.app.n8n.cloud/workflow/y2tytDebvvy6TXLc/executions/2196"
+    },
+    {
+      "execution_id": "2194",
+      "workflow_id": "kGeTjLFh5cU1qZWB",
+      "status": "success",
+      "correlation_id": "ad498738-39a4-449f-9ff0-ddd9877cf58a",
+      "lead_id": "36759dba-2e66-44b1-8c55-80faa23d9ddf",
+      "verification_node": "success",
+      "url": "https://tarekamrtemp.app.n8n.cloud/workflow/kGeTjLFh5cU1qZWB/executions/2194"
+    },
+    {
+      "execution_id": "2190",
+      "workflow_id": "LasZTrooIw2fQlFc",
+      "status": "success",
+      "correlation_id": "ad498738-39a4-449f-9ff0-ddd9877cf58a",
+      "lead_id": "36759dba-2e66-44b1-8c55-80faa23d9ddf",
+      "verification_node": "success",
+      "url": "https://tarekamrtemp.app.n8n.cloud/workflow/LasZTrooIw2fQlFc/executions/2190"
+    },
+    {
+      "execution_id": "2187",
+      "workflow_id": "pJ5ViOd6DTCXMEnC",
+      "status": "success",
+      "correlation_id": "ad498738-39a4-449f-9ff0-ddd9877cf58a",
+      "lead_id": "36759dba-2e66-44b1-8c55-80faa23d9ddf",
+      "verification_node": "success",
+      "url": "https://tarekamrtemp.app.n8n.cloud/workflow/pJ5ViOd6DTCXMEnC/executions/2187"
+    },
+    {
+      "execution_id": "2185",
+      "workflow_id": "43ufdVqP0vh1uv9L",
+      "status": "success",
+      "correlation_id": "ad498738-39a4-449f-9ff0-ddd9877cf58a",
+      "lead_id": null,
+      "verification_node": "success",
+      "url": "https://tarekamrtemp.app.n8n.cloud/workflow/43ufdVqP0vh1uv9L/executions/2185"
+    }
+  ],
+  "retention_policy": "WF02–WF07 successful synthetic executions only. Authenticated entry workflows and provider/AI gateways discard request payloads.",
+  "personal_mode_guard_verified": true,
+  "earlier_unavailable_models": [
+    {
+      "model": "stealth/space-bunny-alpha",
+      "execution_id": "2173",
+      "http_status": 404
+    },
+    {
+      "model": "openai/gpt-oss-120b:free",
+      "execution_id": "2175",
+      "http_status": 404
+    }
+  ],
+  "rate_limited_probe": {
+    "model": "google/gemma-4-31b-it:free",
+    "execution_id": "2181",
+    "http_status": 429
+  },
+  "successful_probe": {
+    "model": "nvidia/nemotron-3-super-120b-a12b:free",
+    "execution_id": "2182",
+    "valid": 1,
+    "requests": 1
+  }
+}

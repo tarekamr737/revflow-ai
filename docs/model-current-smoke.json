@@ -1,0 +1,98 @@
+{
+  "tested_at": "2026-10-06T15:35:21.983Z",
+  "execution_id": "2229",
+  "model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "requests": 6,
+  "valid": 6,
+  "scope": "fixed synthetic fixtures only; no business effects",
+  "pipeline_elapsed_ms": 18290,
+  "external_business_effects": 0,
+  "results": [
+    {
+      "fixture_id": "case-0-0-qualification-v1",
+      "task": "qualification",
+      "prompt_version": "qualification-v1",
+      "success": true,
+      "http_status": 200,
+      "error_code": null,
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "input_tokens": 500,
+      "output_tokens": 138,
+      "cost_usd": 0,
+      "confidence": 0.95,
+      "risk_flags": []
+    },
+    {
+      "fixture_id": "case-0-0-qualification-v2",
+      "task": "qualification",
+      "prompt_version": "qualification-v2",
+      "success": true,
+      "http_status": 200,
+      "error_code": null,
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "input_tokens": 490,
+      "output_tokens": 130,
+      "cost_usd": 0,
+      "confidence": 0.95,
+      "risk_flags": []
+    },
+    {
+      "fixture_id": "case-9-0-qualification-v1",
+      "task": "qualification",
+      "prompt_version": "qualification-v1",
+      "success": true,
+      "http_status": 200,
+      "error_code": null,
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "input_tokens": 493,
+      "output_tokens": 122,
+      "cost_usd": 0,
+      "confidence": 0.8,
+      "risk_flags": [
+        "prompt_injection"
+      ],
+      "deterministic_route": "MANUAL_REVIEW"
+    },
+    {
+      "fixture_id": "case-9-0-qualification-v2",
+      "task": "qualification",
+      "prompt_version": "qualification-v2",
+      "success": true,
+      "http_status": 200,
+      "error_code": null,
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "input_tokens": 483,
+      "output_tokens": 136,
+      "cost_usd": 0,
+      "confidence": 0.75,
+      "risk_flags": [
+        "instruction_override_attempt"
+      ],
+      "deterministic_route": "MANUAL_REVIEW"
+    },
+    {
+      "fixture_id": "approved-outreach",
+      "task": "outreach",
+      "prompt_version": "outreach-v1",
+      "success": true,
+      "http_status": 200,
+      "error_code": null,
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "input_tokens": 302,
+      "output_tokens": 78,
+      "cost_usd": 0
+    },
+    {
+      "fixture_id": "meeting-reply",
+      "task": "reply",
+      "prompt_version": "reply-v1",
+      "success": true,
+      "http_status": 200,
+      "error_code": null,
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "input_tokens": 204,
+      "output_tokens": 25,
+      "cost_usd": 0
+    }
+  ]
+}

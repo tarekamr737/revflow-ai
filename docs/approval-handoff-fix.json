@@ -1,0 +1,45 @@
+{
+  "verified_at": "2026-10-09T14:57:56.382Z",
+  "workflow_id": "9edsFvbor95eIqtM",
+  "published_version": "d50bd24b-200b-49a6-9bed-87756cb06697",
+  "validation": {
+    "valid": true,
+    "nodeCount": 85
+  },
+  "problem": "Intake ended after drafting without running the existing email policy gate.",
+  "change": "Intake now reaches the same email policy gate as approved resumes; the terminal rejects an approval wait without an approval ID.",
+  "mcp_fixtures": {
+    "happy_path": {
+      "executionId": "640",
+      "status": "success"
+    },
+    "manual_review_halt": {
+      "executionId": "641",
+      "status": "success"
+    },
+    "invalid_policy_output": {
+      "executionId": "642",
+      "status": "error",
+      "error": "EMAIL_POLICY_RESULT_REQUIRED [line 1]"
+    },
+    "business_policy": {
+      "executionId": "643",
+      "status": "success"
+    }
+  },
+  "recovered_lead": {
+    "lead_id": "2f348ffb-dedc-4807-bca5-8fd206c49383",
+    "correlation_id": "066afe51-8673-47fa-b0c1-058557bbc737",
+    "approvals": 1,
+    "drafts": 1,
+    "email_actions": 0,
+    "crm_actions": 3,
+    "repeat_resume_idempotent": true,
+    "crm_work_repeated": false
+  },
+  "local_verification": {
+    "regression_tests_passed": 2,
+    "repository_check": "passed"
+  },
+  "scope": "Approval handoff repaired. Full three-situation connected cutover remains pending."
+}

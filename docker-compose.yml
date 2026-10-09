@@ -1,0 +1,79 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: revflow
+      POSTGRES_USER: revflow
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+    volumes:
+      - ./.data/postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -h 127.0.0.1 -U revflow -d revflow]
+      interval: 5s
+      retries: 10
+    restart: unless-stopped
+  migrate:
+    build: .
+    command: [node, scripts/migrate.mjs]
+    environment:
+      DATABASE_URL: postgres://revflow:${POSTGRES_PASSWORD}@postgres:5432/revflow
+      APP_DATABASE_PASSWORD: ${APP_DATABASE_PASSWORD:?Set APP_DATABASE_PASSWORD}
+    depends_on:
+      postgres: {condition: service_healthy}
+  policy:
+    build: .
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3100
+      NODE_ENV: production
+      DATABASE_URL: postgres://revflow_app:${APP_DATABASE_PASSWORD}@postgres:5432/revflow
+      ADAPTER_MODE: ${ADAPTER_MODE:-mock}
+      DATA_MODE: ${DATA_MODE:-synthetic}
+      PERSONAL_CONFIG_JSON: ${PERSONAL_CONFIG_JSON:-}
+      API_TOKEN: ${API_TOKEN:?Set API_TOKEN}
+      APPROVAL_TOKEN: ${APPROVAL_TOKEN:?Set APPROVAL_TOKEN}
+      WEBHOOK_SECRET: ${WEBHOOK_SECRET:?Set WEBHOOK_SECRET}
+      HUBSPOT_ACCESS_TOKEN: ${HUBSPOT_ACCESS_TOKEN:-}
+      HUBSPOT_PIPELINE: ${HUBSPOT_PIPELINE:-}
+      HUBSPOT_DEAL_STAGE: ${HUBSPOT_DEAL_STAGE:-}
+      GOOGLE_ACCESS_TOKEN: ${GOOGLE_ACCESS_TOKEN:-}
+      GOOGLE_CALENDAR_ID: ${GOOGLE_CALENDAR_ID:-primary}
+      GMAIL_SENDER: ${GMAIL_SENDER:-}
+      GMAIL_TEST_RECIPIENT: ${GMAIL_TEST_RECIPIENT:-}
+      SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN:-}
+      SLACK_CHANNEL: ${SLACK_CHANNEL:-}
+      AI_GATEWAY_URL: ${AI_GATEWAY_URL:-}
+      AI_GATEWAY_TOKEN: ${AI_GATEWAY_TOKEN:-}
+      N8N_INGEST_URL: ${N8N_INGEST_URL:-}
+      N8N_SEND_URL: ${N8N_SEND_URL:-}
+      N8N_REPLY_URL: ${N8N_REPLY_URL:-}
+      N8N_MEETING_URL: ${N8N_MEETING_URL:-}
+      N8N_FOLLOWUPS_URL: ${N8N_FOLLOWUPS_URL:-}
+      N8N_INBOUND_TOKEN: ${N8N_INBOUND_TOKEN:-}
+      N8N_GATEWAY_TOKEN: ${N8N_GATEWAY_TOKEN:-}
+      CONNECTOR_GATEWAY_URL: ${CONNECTOR_GATEWAY_URL:-}
+    ports: ["127.0.0.1:3100:3100"]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://localhost:3100/health').then(r=>{if(!r.ok)process.exit(1)})"]
+      interval: 15s
+      retries: 3
+    restart: unless-stopped
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:2.41.5
+    environment:
+      N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY:?Set N8N_ENCRYPTION_KEY}
+      GENERIC_TIMEZONE: UTC
+      N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: "true"
+      EXECUTIONS_DATA_SAVE_ON_SUCCESS: none
+      EXECUTIONS_DATA_SAVE_ON_ERROR: none
+      EXECUTIONS_DATA_PRUNE: "true"
+      EXECUTIONS_DATA_MAX_AGE: "168"
+      N8N_BLOCK_ENV_ACCESS_IN_NODE: "true"
+      N8N_COMMUNITY_PACKAGES_ENABLED: "false"
+      N8N_DIAGNOSTICS_ENABLED: "false"
+      N8N_PUBLIC_API_DISABLED: "true"
+    ports: ["127.0.0.1:5678:5678"]
+    volumes: ["./.data/n8n:/home/node/.n8n"]
+    restart: unless-stopped

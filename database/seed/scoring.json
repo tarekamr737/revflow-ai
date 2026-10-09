@@ -1,0 +1,1 @@
+{"version":"score-v1","weights":{"fit":40,"intent":30,"urgency":15,"engagement":15},"thresholds":{"HOT":80,"WARM":60,"NURTURE":40},"minimum_confidence":0.8}

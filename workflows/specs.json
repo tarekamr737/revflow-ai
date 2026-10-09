@@ -1,0 +1,66 @@
+[
+  {
+    "name": "revflow_01_lead_ingestion",
+    "stage": "ingest"
+  },
+  {
+    "name": "revflow_02_normalize_dedupe",
+    "stage": "normalize"
+  },
+  {
+    "name": "revflow_03_enrichment",
+    "stage": "enrich"
+  },
+  {
+    "name": "revflow_05_score_route",
+    "stage": "score"
+  },
+  {
+    "name": "revflow_audit_event",
+    "stage": "audit"
+  },
+  {
+    "name": "revflow_04_ai_signal_extraction",
+    "stage": "qualify"
+  },
+  {
+    "name": "revflow_06_hubspot_sync",
+    "stage": "crm"
+  },
+  {
+    "name": "revflow_07_outreach_generate",
+    "stage": "draft"
+  },
+  {
+    "name": "revflow_08_outreach_policy_hitl_send",
+    "stage": "send"
+  },
+  {
+    "name": "revflow_09_reply_agent",
+    "stage": "reply"
+  },
+  {
+    "name": "revflow_10_meeting_lifecycle",
+    "stage": "meeting"
+  },
+  {
+    "name": "revflow_followup_scheduler",
+    "stage": "followups"
+  },
+  {
+    "name": "revflow_11_error_dlq",
+    "stage": "fail"
+  },
+  {
+    "name": "revflow_12_evaluation",
+    "stage": "evaluate"
+  },
+  {
+    "name": "revflow_retry_scheduler",
+    "stage": "retries"
+  },
+  {
+    "name": "revflow_meeting_reminders",
+    "stage": "reminders"
+  }
+]

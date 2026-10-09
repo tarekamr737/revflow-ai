@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-02",
+  "scope": "Synthetic fixtures only; connected test accounts; n8n MCP workflow authoring/validation/testing",
+  "cloud_to_postgres": true,
+  "model": "stealth/space-bunny-alpha",
+  "main_pipeline": {
+    "executionId": "97",
+    "followup_fixture": "165",
+    "company_first_fixture": "205",
+    "duplicate": "116",
+    "invalid": "118"
+  },
+  "email": {
+    "send": "121",
+    "repeat": "123",
+    "completed_actions": 1,
+    "provider_thread_persisted": true,
+    "recipient_scope": "connected account itself"
+  },
+  "reply": {
+    "model": "124",
+    "gmail_thread_fixture": "128",
+    "invalid_sender": "133"
+  },
+  "meeting": {
+    "booking": "140",
+    "repeat": "145",
+    "completed_bookings": 1,
+    "crm_note_once": true,
+    "real_busy_conflict": true,
+    "reminder_persisted": true
+  },
+  "followups": {
+    "sends": [
+      "188",
+      "192",
+      "196"
+    ],
+    "fourth_run": "198",
+    "count": 3
+  },
+  "enrichment": {
+    "api_fixture": "226",
+    "provenance": "hubspot_company_api",
+    "confidence": 0.8,
+    "ambiguous_fixture": "162",
+    "company_create_before_contact": true
+  },
+  "adversarial": {
+    "spam": "242",
+    "ambiguous": "250",
+    "injection": "258",
+    "protected_actions": 0
+  },
+  "reliability": {
+    "global_permanent": "228",
+    "global_transient_without_action": "231",
+    "orphan_retry_cleanup": "266",
+    "zero_missing_completed_action_audits": true
+  },
+  "evaluation": {
+    "stage": "233",
+    "live_requests": 112,
+    "versions": [
+      "qualification-v1",
+      "qualification-v2"
+    ],
+    "batch_executions": [
+      "54",
+      "55",
+      "56",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64"
+    ],
+    "rate_limit_fixture": "268",
+    "fixture_requests": 4,
+    "fixture_valid": 0,
+    "human_agreement": "unmeasured"
+  },
+  "limitations": [
+    "Gmail intake used synthetic sender/thread fixtures; no real prospect inbox content was read.",
+    "Dataset has 15 template families; repeated text reuses recorded model responses.",
+    "Early fixture domains exposed HubSpot automatic company creation; ambiguous records remain for review, and subsequent contact creation explicitly associates the company.",
+    "Temporary HTTPS tunnel was closed after verification; always-on operation requires a maintained HTTPS policy endpoint."
+  ],
+  "temporary_tunnel_closed": true,
+  "all_workflows_inactive": true,
+  "retired_endpoint": "https://policy.revflow.invalid",
+  "action_audit_missing": 0,
+  "orphan_retries": 0,
+  "local_runtime": "mock"
+}
