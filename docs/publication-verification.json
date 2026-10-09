@@ -1,0 +1,49 @@
+{
+  "verified_at": "2026-10-09T17:10:29Z",
+  "repository": "https://github.com/tarekamr737/revflow-ai",
+  "visibility": "public",
+  "default_branch": "main",
+  "license": "MIT",
+  "source_revision": "9af93bc31a4f6a5da7f2961e4f737be151c3681a",
+  "clean_checkout": {
+    "locked_install": true,
+    "fresh_migrations": true,
+    "tests_passed": 72,
+    "tests_failed": 0,
+    "synthetic_evaluation": true,
+    "recorded_model_replay": true,
+    "mock_cli_demo": true,
+    "mock_api_journey": "MEETING_BOOKED",
+    "local_approval_without_token": true,
+    "external_provider_calls": 0,
+    "private_n8n_config_absent": true
+  },
+  "publication_checks": {
+    "secret_pattern_scan": "passed",
+    "nonfixture_email_scan": "passed",
+    "private_configuration_excluded": true,
+    "screenshot_review": "12 synthetic screenshots reviewed",
+    "powershell_parse": "passed",
+    "entrypoint_documentation_links": "passed",
+    "production_dependency_audit": {
+      "known_vulnerabilities": 0
+    }
+  },
+  "github": {
+    "initial_ci_run": "https://github.com/tarekamr737/revflow-ai/actions/runs/37964215472",
+    "initial_ci_conclusion": "success",
+    "initial_jobs": [
+      "Linux Node 22",
+      "Linux Node 24",
+      "Windows Node 24"
+    ],
+    "secret_scanning": true,
+    "push_protection": true,
+    "private_vulnerability_reporting": true
+  },
+  "limitations": [
+    "Native three-scenario unified cutover and retirement of former workflows remain pending.",
+    "Historical model metrics do not benchmark the current configured model.",
+    "Source scans are pattern-based checks, not an exhaustive security certification."
+  ]
+}

@@ -104,4 +104,4 @@ Rule: complete top-to-bottom. For every n8n workflow: **build via n8n MCP -> val
 
 ## Public repository delivery
 - [x] Prepare public source, README, MIT license, contribution/security guides, and CI. — Portable paths; ignored private n8n/recipient configuration; local mock approvals and configured workflow links tested. 72 tests pass; production dependency audit reports zero findings.
-- [ ] Verify the publishable checkout, publish to GitHub, and confirm CI.
+- [x] Verify the publishable checkout, publish to GitHub, and confirm CI. — Clean checkout passes install, migrations, 72 tests, evaluations and mock booking; GitHub Linux/Windows matrix passes (37964215472). Public main published; secret scanning, push protection and private reporting verified. docs/publication-verification.json.

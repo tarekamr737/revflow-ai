@@ -102,7 +102,7 @@ The app's lead search lets you reopen a completed journey. Workspace totals incl
 - **Traceable outcomes:** PostgreSQL events and saved provider receipts make decisions inspectable; n8n shows the orchestration on one canvas.
 - **One inspectable canvas:** business stages, shared AI/provider services, utilities and error handling live in one workflow; PostgreSQL still owns business state.
 
-Describe these as implemented capabilities. Do not claim revenue gains, hours saved, or real-world model accuracy without measuring them. The local suite passes 70 tests; [CRM recovery verification](crm-recovery-fix.json) includes the latest regression checks; [verification](verification.json) and [measured evaluation](../evaluation/results-recorded-live.json) record the evidence and its limits.
+Describe these as implemented capabilities. Do not claim revenue gains, hours saved, or real-world model accuracy without measuring them. The local suite passes 72 tests; [CRM recovery verification](crm-recovery-fix.json) includes the latest regression checks; [verification](verification.json) and [measured evaluation](../evaluation/results-recorded-live.json) record the evidence and its limits.
 
 The current model is `nvidia/nemotron-3-super-120b-a12b:free`, with reasoning disabled and strict output validation. [Six native fixtures](model-current-smoke.json) pass, including injection cases that deterministic scoring routes to manual review. The older 112-request evaluation describes the previous model; it is not a benchmark of the current model.
 

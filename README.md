@@ -152,7 +152,7 @@ Evaluation stops before CRM, email, and booking. Its **240 synthetic cases come 
 
 The historical model comparison used `stealth/space-bunny-alpha`: **112 live semantic requests**, followed by exact-response replay through the qualification/scoring service. Its results do not benchmark the currently configured `nvidia/nemotron-3-super-120b-a12b:free` model. Human qualification agreement remains unmeasured; missing provider cost remains unreported.
 
-Evidence: [mock evaluation](evaluation/results.json), [recorded model evaluation](evaluation/results-recorded-live.json), [historical verification](docs/verification.json), and [latest CRM recovery](docs/crm-recovery-fix.json).
+Evidence: [publication verification](docs/publication-verification.json), [mock evaluation](evaluation/results.json), [recorded model evaluation](evaluation/results-recorded-live.json), [historical verification](docs/verification.json), and [latest CRM recovery](docs/crm-recovery-fix.json).
 
 ## Repository guide
 
